@@ -1,0 +1,31 @@
+# 資料：受 DUA 限制，不得公開
+data/
+
+# 特徵快取與實驗 log（可由 code/analysis/extract_feats.py 重新產生）
+runs/
+
+# 骨幹權重（455 MB，由 export_ensemble.py 從 timm 產生）
+code/submission/resources/
+code/submission/resources_v1_backup/
+*.tar.gz
+*.pth
+*.npz
+
+# 主辦方的程式碼，各自有其授權，不重新散布
+# （RARE25-Submission 是 CC BY-NC 4.0，與本 repo 的 MIT 不相容）
+code/RARE25-Baselines/
+code/RARE25-Submission/
+docs/template_ref/
+
+# 內部工作紀錄（非程式碼；要公開再自行移除本段）
+STATUS.md
+RESUME.md
+DECISIONS.md
+docs/tech_report_draft_*.md
+
+# 容器本機測試的輸入輸出
+code/submission/test/
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
